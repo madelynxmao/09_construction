@@ -7,5 +7,7 @@ main.o: main.c game_level.h
 game_level.o: game_level.c
 	gcc -c game_level.c
 
-run: game_level
-	./game_level
+.PHONY: clean
+
+clean:
+	-rm *.o
